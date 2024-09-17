@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/body"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/head"
+
+        />
+
+    <ImageView
+        android:id="@+id/left_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/body"
+        app:srcCompat="@drawable/hand" />
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/body" />
+
+    <ImageView
+        android:id="@+id/right_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/body"
+        app:srcCompat="@drawable/hand" />
+
+   <RelativeLayout
+       android:layout_below="@+id/body"
+       android:layout_width="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:id="@+id/left_leg"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="30dp"
+           app:srcCompat="@drawable/leg" />
+
+       <ImageView
+           android:layout_centerHorizontal="true"
+           android:id="@+id/right_leg"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toEndOf="@+id/left_leg"
+           app:srcCompat="@drawable/leg" />
+
+
+   </RelativeLayout>
+
+
+</RelativeLayout>
